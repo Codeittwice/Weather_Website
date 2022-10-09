@@ -69,9 +69,16 @@ app.get('/weather', (req, res) => {
             console.log(forecastData)
 
             res.send({
-                forecast: forecastData,
+                forecast: forecastData.brief,
                 location,
-                address: req.query.address
+                address: req.query.address,
+                windSpeed: forecastData.windSpeed,
+                pressure: forecastData.pressure,
+                humidity: forecastData.humidity,
+                cloudcover: forecastData.cloudcover,
+                uv_index: forecastData.uv_index,
+                visibility: forecastData.visibility,
+                observation_time: forecastData.observation_time,
             })
         })
 

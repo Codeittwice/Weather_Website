@@ -76,6 +76,13 @@ a:hover{
     font-style: none;
     line-height: 30px;
 }
+.forecastBonus{
+    font-size: 20px;
+    padding: 5px;
+    color: #2EBCF6;
+    font-style: none;
+    line-height: 20px;
+}
 
 input{
     border: #2EBCF6 1px solid;
